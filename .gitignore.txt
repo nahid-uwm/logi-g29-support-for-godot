@@ -1,0 +1,25 @@
+# --- Godot 4 ---
+.godot/                 # editor cache (imports, script cache, etc.)
+*.import                # import metadata files (you have icon.svg.import)
+*.translation           # generated translation files
+
+# (Optional: only needed for Godot 3 projects)
+.import/
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- OS junk ---
+.DS_Store
+Thumbs.db
+
+# --- Logs / misc ---
+*.log
+
+# --- C# / Mono (ONLY if you ever add C# later) ---
+# .mono/
+# data_*/
+# mono_crash.*.json
