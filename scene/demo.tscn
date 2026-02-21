@@ -1,0 +1,249 @@
+[gd_scene format=3 uid="uid://co1ca0w4u2dxy"]
+
+[ext_resource type="Script" uid="uid://ccs5y2ot3qahs" path="res://addons/logitech_g29/scripts/G29Wheel.gd" id="1_714nx"]
+[ext_resource type="Script" uid="uid://bjidevhxgb15o" path="res://addons/logitech_g29/scripts/G29Pedals.gd" id="3_5woa8"]
+[ext_resource type="Script" uid="uid://cu7pdkimqyg7j" path="res://scene/WheelController.gd" id="4_714nx"]
+[ext_resource type="Script" uid="uid://55igqqjmh45x" path="res://scene/controller.gd" id="4_f5k0o"]
+[ext_resource type="Texture2D" uid="uid://c3lrsvbctjhyw" path="res://scene/assets/logi g29 wheel/with button.png" id="5_85lbd"]
+[ext_resource type="Texture2D" uid="uid://b5i5jtg3xysfd" path="res://scene/assets/logi g29 wheel/circle.png" id="6_fkw2s"]
+[ext_resource type="Texture2D" uid="uid://cutopi7v0jann" path="res://scene/assets/logi g29 wheel/d down.png" id="7_bn7tq"]
+[ext_resource type="Texture2D" uid="uid://m3wfyifkqoj0" path="res://scene/assets/logi g29 wheel/d left.png" id="8_6mwlk"]
+[ext_resource type="Texture2D" uid="uid://b6ajyf76sn370" path="res://scene/assets/logi g29 wheel/d right.png" id="9_mu0kg"]
+[ext_resource type="Texture2D" uid="uid://b21c37s0apvgh" path="res://scene/assets/logi g29 wheel/d up.png" id="10_5woa8"]
+[ext_resource type="Texture2D" uid="uid://dqdogob0r5yyt" path="res://scene/assets/logi g29 wheel/triangle.png" id="11_f8cvr"]
+[ext_resource type="Texture2D" uid="uid://ddhqh3fl0rswp" path="res://scene/assets/logi g29 wheel/red dial.png" id="12_rvy4f"]
+[ext_resource type="Texture2D" uid="uid://bt4fbvi1vo7o7" path="res://scene/assets/logi g29 wheel/enter.png" id="13_axofr"]
+[ext_resource type="Texture2D" uid="uid://584l0td2lv00" path="res://scene/assets/logi g29 wheel/l1.png" id="14_rc8yh"]
+[ext_resource type="Texture2D" uid="uid://6whpjmoqxncd" path="res://scene/assets/logi g29 wheel/l2.png" id="15_xm6nw"]
+[ext_resource type="Texture2D" uid="uid://bco7wn0muk7f0" path="res://scene/assets/logi g29 wheel/l3.png" id="16_d4vjd"]
+[ext_resource type="Texture2D" uid="uid://bw7yi1vstixft" path="res://scene/assets/logi g29 wheel/minus.png" id="17_spbeo"]
+[ext_resource type="Texture2D" uid="uid://dmybs5pwrh6ii" path="res://scene/assets/logi g29 wheel/option.png" id="18_558rk"]
+[ext_resource type="Texture2D" uid="uid://bl4hupvi2l2te" path="res://scene/assets/logi g29 wheel/plus.png" id="19_bw8fh"]
+[ext_resource type="Texture2D" uid="uid://dd35kjloi0shh" path="res://scene/assets/logi g29 wheel/ps.png" id="20_dxun4"]
+[ext_resource type="Texture2D" uid="uid://b3glyo52d0xlb" path="res://scene/assets/logi g29 wheel/r1.png" id="21_fmt3g"]
+[ext_resource type="Texture2D" uid="uid://cbnctoe65vtyw" path="res://scene/assets/logi g29 wheel/r2.png" id="22_0wgqp"]
+[ext_resource type="Texture2D" uid="uid://dcrjf3yveam5g" path="res://scene/assets/logi g29 wheel/r3.png" id="23_cvhho"]
+[ext_resource type="Texture2D" uid="uid://bvhm5rgqo2g11" path="res://scene/assets/logi g29 wheel/share.png" id="24_k3s80"]
+[ext_resource type="Texture2D" uid="uid://dvh7c8df6rrcb" path="res://scene/assets/logi g29 wheel/square.png" id="25_heqn7"]
+[ext_resource type="Texture2D" uid="uid://rk3fsyq1df5k" path="res://scene/assets/logi g29 wheel/x.png" id="26_ks6np"]
+[ext_resource type="Texture2D" uid="uid://bd26t10xbmk4m" path="res://scene/assets/logi g29 pedal/pedal full.png" id="28_f8cvr"]
+[ext_resource type="Texture2D" uid="uid://bsuydvpqx8jqc" path="res://scene/assets/logi g29 pedal/Brake.png" id="29_rvy4f"]
+[ext_resource type="Texture2D" uid="uid://c1761i2wvnb1h" path="res://scene/assets/logi g29 pedal/Clutch.png" id="30_axofr"]
+[ext_resource type="Texture2D" uid="uid://g8v0x0wnossh" path="res://scene/assets/logi g29 pedal/Throttle.png" id="31_rc8yh"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_85lbd"]
+
+[node name="Node3D" type="Node2D" unique_id=1019296721]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=353513569]
+modulate = Color(0.60822946, 0.61413014, 0.66323006, 1)
+position = Vector2(573.49994, 322.50012)
+scale = Vector2(3517.0002, 2333)
+texture = SubResource("CanvasTexture_85lbd")
+
+[node name="controller" type="Node2D" parent="." unique_id=1298099045]
+script = ExtResource("4_f5k0o")
+
+[node name="G29Wheel" type="Node" parent="." unique_id=1812809023]
+script = ExtResource("1_714nx")
+metadata/_custom_type_script = "uid://ccs5y2ot3qahs"
+
+[node name="G29Pedals" type="Node" parent="." unique_id=1677598998]
+script = ExtResource("3_5woa8")
+metadata/_custom_type_script = "uid://bjidevhxgb15o"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1829947010]
+position = Vector2(576, 324)
+
+[node name="WheelController2D" type="Node2D" parent="." unique_id=2097820034]
+unique_name_in_owner = true
+script = ExtResource("4_714nx")
+metadata/_custom_type_script = "uid://cu7pdkimqyg7j"
+
+[node name="wheel" type="Node2D" parent="." unique_id=2044181875]
+unique_name_in_owner = true
+position = Vector2(329, 300)
+scale = Vector2(0.35, 0.35)
+
+[node name="WithButton" type="Sprite2D" parent="wheel" unique_id=1233359277]
+unique_name_in_owner = true
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("5_85lbd")
+
+[node name="Circle" type="Sprite2D" parent="wheel" unique_id=1686759907]
+unique_name_in_owner = true
+position = Vector2(312.49997, -139.99998)
+texture = ExtResource("6_fkw2s")
+
+[node name="DDown" type="Sprite2D" parent="wheel" unique_id=696605620]
+unique_name_in_owner = true
+position = Vector2(-259.99997, -99.99999)
+texture = ExtResource("7_bn7tq")
+
+[node name="DLeft" type="Sprite2D" parent="wheel" unique_id=1707854294]
+unique_name_in_owner = true
+position = Vector2(-302.5, -142.5)
+texture = ExtResource("8_6mwlk")
+
+[node name="DRight" type="Sprite2D" parent="wheel" unique_id=776069465]
+unique_name_in_owner = true
+position = Vector2(-217.49998, -142.49998)
+texture = ExtResource("9_mu0kg")
+
+[node name="DUp" type="Sprite2D" parent="wheel" unique_id=1900787561]
+unique_name_in_owner = true
+position = Vector2(-259.99994, -185)
+texture = ExtResource("10_5woa8")
+
+[node name="Triangle" type="Sprite2D" parent="wheel" unique_id=1531099546]
+unique_name_in_owner = true
+position = Vector2(262.5, -190)
+scale = Vector2(0.99999994, 0.99999994)
+texture = ExtResource("11_f8cvr")
+
+[node name="RedDial" type="Sprite2D" parent="wheel" unique_id=1987913733]
+unique_name_in_owner = true
+position = Vector2(180.00002, 187.50002)
+scale = Vector2(1.0277777, 1.0277777)
+texture = ExtResource("12_rvy4f")
+
+[node name="Enter" type="Sprite2D" parent="wheel" unique_id=1474084575]
+unique_name_in_owner = true
+position = Vector2(179.99998, 187.49997)
+texture = ExtResource("13_axofr")
+
+[node name="L1" type="Sprite2D" parent="wheel" unique_id=1222341951]
+unique_name_in_owner = true
+position = Vector2(-417.5, -214.99998)
+texture = ExtResource("14_rc8yh")
+
+[node name="L2" type="Sprite2D" parent="wheel" unique_id=1870917641]
+unique_name_in_owner = true
+position = Vector2(-232.49997, 7.499999)
+texture = ExtResource("15_xm6nw")
+
+[node name="L3" type="Sprite2D" parent="wheel" unique_id=1982098584]
+unique_name_in_owner = true
+position = Vector2(-317.49997, 112.49999)
+texture = ExtResource("16_d4vjd")
+
+[node name="Minus" type="Sprite2D" parent="wheel" unique_id=1058317690]
+unique_name_in_owner = true
+position = Vector2(-184.99998, 227.49997)
+texture = ExtResource("17_spbeo")
+
+[node name="Option" type="Sprite2D" parent="wheel" unique_id=4238945]
+unique_name_in_owner = true
+position = Vector2(0, 269.99997)
+texture = ExtResource("18_558rk")
+
+[node name="Plus" type="Sprite2D" parent="wheel" unique_id=1800161948]
+unique_name_in_owner = true
+position = Vector2(-184.99998, 162.49998)
+texture = ExtResource("19_bw8fh")
+
+[node name="Ps" type="Sprite2D" parent="wheel" unique_id=533934112]
+unique_name_in_owner = true
+position = Vector2(0, 319.99997)
+texture = ExtResource("20_dxun4")
+
+[node name="R1" type="Sprite2D" parent="wheel" unique_id=1887659806]
+unique_name_in_owner = true
+position = Vector2(414.99997, -214.99998)
+texture = ExtResource("21_fmt3g")
+
+[node name="R2" type="Sprite2D" parent="wheel" unique_id=1380698662]
+unique_name_in_owner = true
+position = Vector2(232.49997, 7.499999)
+texture = ExtResource("22_0wgqp")
+
+[node name="R3" type="Sprite2D" parent="wheel" unique_id=1797891292]
+unique_name_in_owner = true
+position = Vector2(317.49997, 112.49999)
+texture = ExtResource("23_cvhho")
+
+[node name="Share" type="Sprite2D" parent="wheel" unique_id=1671364238]
+unique_name_in_owner = true
+position = Vector2(0, 224.99998)
+texture = ExtResource("24_k3s80")
+
+[node name="Square" type="Sprite2D" parent="wheel" unique_id=304868371]
+unique_name_in_owner = true
+position = Vector2(212.5, -140)
+texture = ExtResource("25_heqn7")
+
+[node name="X" type="Sprite2D" parent="wheel" unique_id=678304304]
+unique_name_in_owner = true
+position = Vector2(262.5, -89.99997)
+texture = ExtResource("26_ks6np")
+
+[node name="pedal" type="Node2D" parent="." unique_id=1978042516]
+position = Vector2(880, 291)
+scale = Vector2(0.25, 0.25)
+
+[node name="PedalFull" type="Sprite2D" parent="pedal" unique_id=1369666448]
+texture = ExtResource("28_f8cvr")
+
+[node name="Brake" type="Sprite2D" parent="pedal" unique_id=1677934171]
+unique_name_in_owner = true
+position = Vector2(-43.333496, -300)
+texture = ExtResource("29_rvy4f")
+
+[node name="Clutch" type="Sprite2D" parent="pedal" unique_id=887050549]
+unique_name_in_owner = true
+position = Vector2(-453.3335, -303.3333)
+texture = ExtResource("30_axofr")
+
+[node name="Throttle" type="Sprite2D" parent="pedal" unique_id=1610970655]
+unique_name_in_owner = true
+position = Vector2(443.33313, -283.3333)
+texture = ExtResource("31_rc8yh")
+
+[connection signal="circle_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_circle_pressed"]
+[connection signal="circle_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_circle_released"]
+[connection signal="cross_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_cross_pressed"]
+[connection signal="cross_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_cross_released"]
+[connection signal="dial_enter_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_dial_enter_pressed"]
+[connection signal="dial_enter_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_dial_enter_released"]
+[connection signal="dial_left_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_dial_left_pressed"]
+[connection signal="dial_left_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_dial_left_released"]
+[connection signal="dial_right_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_dial_right_pressed"]
+[connection signal="dial_right_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_dial_right_released"]
+[connection signal="dpad_down_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_down_pressed"]
+[connection signal="dpad_down_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_down_released"]
+[connection signal="dpad_left_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_left_pressed"]
+[connection signal="dpad_left_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_left_released"]
+[connection signal="dpad_right_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_right_pressed"]
+[connection signal="dpad_right_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_right_released"]
+[connection signal="dpad_up_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_up_pressed"]
+[connection signal="dpad_up_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_dpad_up_released"]
+[connection signal="l1_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_l_1_pressed"]
+[connection signal="l1_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_l_1_released"]
+[connection signal="l2_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_l_2_pressed"]
+[connection signal="l2_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_l_2_released"]
+[connection signal="l3_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_l_3_pressed"]
+[connection signal="l3_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_l_3_released"]
+[connection signal="minus_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_minus_pressed"]
+[connection signal="minus_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_minus_released"]
+[connection signal="options_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_options_pressed"]
+[connection signal="options_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_options_released"]
+[connection signal="plus_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_plus_pressed"]
+[connection signal="plus_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_plus_released"]
+[connection signal="ps_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_ps_pressed"]
+[connection signal="ps_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_ps_released"]
+[connection signal="r1_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_r_1_pressed"]
+[connection signal="r1_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_r_1_released"]
+[connection signal="r2_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_r_2_pressed"]
+[connection signal="r2_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_r_2_released"]
+[connection signal="r3_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_r_3_pressed"]
+[connection signal="r3_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_r_3_released"]
+[connection signal="share_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_share_pressed"]
+[connection signal="share_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_share_released"]
+[connection signal="square_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_square_pressed"]
+[connection signal="square_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_square_released"]
+[connection signal="steering_changed" from="G29Wheel" to="controller" method="_on_g_29_wheel_steering_changed"]
+[connection signal="triangle_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_triangle_pressed"]
+[connection signal="triangle_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_triangle_released"]
+[connection signal="brake_changed" from="G29Pedals" to="controller" method="_on_g_29_pedals_brake_changed"]
+[connection signal="clutch_changed" from="G29Pedals" to="controller" method="_on_g_29_pedals_clutch_changed"]
+[connection signal="throttle_changed" from="G29Pedals" to="controller" method="_on_g_29_pedals_throttle_changed"]
