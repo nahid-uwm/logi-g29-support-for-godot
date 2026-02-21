@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://ccs5y2ot3qahs" path="res://addons/logitech_g29/scripts/G29Wheel.gd" id="1_714nx"]
 [ext_resource type="Script" uid="uid://bjidevhxgb15o" path="res://addons/logitech_g29/scripts/G29Pedals.gd" id="3_5woa8"]
-[ext_resource type="Script" uid="uid://cu7pdkimqyg7j" path="res://scene/WheelController.gd" id="4_714nx"]
 [ext_resource type="Script" uid="uid://55igqqjmh45x" path="res://scene/controller.gd" id="4_f5k0o"]
 [ext_resource type="Texture2D" uid="uid://c3lrsvbctjhyw" path="res://scene/assets/logi g29 wheel/with button.png" id="5_85lbd"]
 [ext_resource type="Texture2D" uid="uid://b5i5jtg3xysfd" path="res://scene/assets/logi g29 wheel/circle.png" id="6_fkw2s"]
@@ -33,9 +32,9 @@
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_85lbd"]
 
-[node name="Node3D" type="Node2D" unique_id=1019296721]
+[node name="DemoMain" type="Node2D" unique_id=1019296721]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=353513569]
+[node name="Background" type="Sprite2D" parent="." unique_id=353513569]
 modulate = Color(0.60822946, 0.61413014, 0.66323006, 1)
 position = Vector2(573.49994, 322.50012)
 scale = Vector2(3517.0002, 2333)
@@ -54,11 +53,6 @@ metadata/_custom_type_script = "uid://bjidevhxgb15o"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1829947010]
 position = Vector2(576, 324)
-
-[node name="WheelController2D" type="Node2D" parent="." unique_id=2097820034]
-unique_name_in_owner = true
-script = ExtResource("4_714nx")
-metadata/_custom_type_script = "uid://cu7pdkimqyg7j"
 
 [node name="wheel" type="Node2D" parent="." unique_id=2044181875]
 unique_name_in_owner = true

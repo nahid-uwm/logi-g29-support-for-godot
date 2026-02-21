@@ -1,7 +1,5 @@
 extends Node2D
 
-
-@onready var wheel_controller_2d: WheelController2D = %WheelController2D
 @onready var wheel: Node2D = %wheel
 
 @onready var with_button: Sprite2D = %WithButton
