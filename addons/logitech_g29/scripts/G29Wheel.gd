@@ -1,12 +1,22 @@
 ## A custom node for handling input from a Logitech G29 Racing Wheel.
 ##
-## [G29Wheel] detects a connected racing wheel and translates raw joypad inputs 
-## into human-readable signals. It calculates steering degrees based on the 
-## [member wheel_range_degrees] and maps all face buttons, D-pad inputs, 
-## paddles, and center dials to individual pressed/released signals.
+## [G29Wheel] is a “translator” between the G29 wheel and your game.
+## Godot gives wheel input as low-level joypad data (axis values and button IDs),
+## which can be hard to work with directly. This node:
+## [br]
+## - Watches for a racing wheel to be connected (and reconnects if it’s unplugged).
+## - Reads the steering axis each frame and converts it from a raw -1.0..1.0 value
+##   into a real steering angle in degrees using [member wheel_range_degrees].
+## - Emits clear, named signals (like [code]cross_pressed[/code] or [code]dpad_left_released[/code])
+##   instead of making you remember numeric button indexes.
+## - Keeps track of previous button states so it only emits “pressed” once when a
+##   button goes down, and “released” once when it comes back up.
 ## [br][br]
-## By default, it will automatically search for the wheel if [member prefer_logitech_g29] is enabled.
-@icon("uid://ch73ynu3lh3p")
+## By default, if [member prefer_logitech_g29] is enabled, it will try to pick the
+## correct device automatically by looking for “G29” or “Logitech” in the device name.
+## If it can’t find a match, it falls back to the first connected joypad.
+
+@icon("res://addons/logitech_g29/icons/G29 Steering.svg")
 class_name G29Wheel
 extends Node
 

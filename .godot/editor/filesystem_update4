@@ -1,0 +1,6 @@
+res://scene/demo.tscn
+res://scene/controller.gd
+res://addons/logitech_g29/scripts/G29Pedals.gd
+res://addons/logitech_g29/scripts/G29Wheel.gd
+res://addons/logitech_g29/scripts/G29Shifter.gd
+res://addons/logitech_g29/scripts/G29WheelShifterPriority.gd

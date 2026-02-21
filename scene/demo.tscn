@@ -56,7 +56,7 @@ position = Vector2(576, 324)
 
 [node name="wheel" type="Node2D" parent="." unique_id=2044181875]
 unique_name_in_owner = true
-position = Vector2(329, 300)
+position = Vector2(325, 343)
 scale = Vector2(0.35, 0.35)
 
 [node name="WithButton" type="Sprite2D" parent="wheel" unique_id=1233359277]
@@ -172,7 +172,7 @@ position = Vector2(262.5, -89.99997)
 texture = ExtResource("26_ks6np")
 
 [node name="pedal" type="Node2D" parent="." unique_id=1978042516]
-position = Vector2(880, 291)
+position = Vector2(874, 328)
 scale = Vector2(0.25, 0.25)
 
 [node name="PedalFull" type="Sprite2D" parent="pedal" unique_id=1369666448]
@@ -192,6 +192,52 @@ texture = ExtResource("30_axofr")
 unique_name_in_owner = true
 position = Vector2(443.33313, -283.3333)
 texture = ExtResource("31_rc8yh")
+
+[node name="text" type="Node2D" parent="." unique_id=1913804835]
+
+[node name="WheelDegree" type="Label" parent="text" unique_id=510890789]
+unique_name_in_owner = true
+offset_left = 260.0
+offset_top = 36.0
+offset_right = 386.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0.16924527, 0.1692453, 0.16924521, 1)
+theme_override_font_sizes/font_size = 30
+text = "Wheel"
+horizontal_alignment = 1
+
+[node name="ClutchLabel" type="Label" parent="text" unique_id=396546867]
+unique_name_in_owner = true
+offset_left = 689.0
+offset_top = 144.0
+offset_right = 815.0
+offset_bottom = 186.0
+theme_override_colors/font_color = Color(0.16924527, 0.1692453, 0.16924521, 1)
+theme_override_font_sizes/font_size = 30
+text = "Clutch"
+horizontal_alignment = 1
+
+[node name="BrakeLabel" type="Label" parent="text" unique_id=270190596]
+unique_name_in_owner = true
+offset_left = 802.0
+offset_top = 144.0
+offset_right = 928.0
+offset_bottom = 186.0
+theme_override_colors/font_color = Color(0.16924527, 0.1692453, 0.16924521, 1)
+theme_override_font_sizes/font_size = 30
+text = "Clutch"
+horizontal_alignment = 1
+
+[node name="ThrottleLabel" type="Label" parent="text" unique_id=1120132870]
+unique_name_in_owner = true
+offset_left = 925.0
+offset_top = 144.0
+offset_right = 1051.0
+offset_bottom = 186.0
+theme_override_colors/font_color = Color(0.16924527, 0.1692453, 0.16924521, 1)
+theme_override_font_sizes/font_size = 30
+text = "Throttle"
+horizontal_alignment = 1
 
 [connection signal="circle_pressed" from="G29Wheel" to="controller" method="_on_g_29_wheel_circle_pressed"]
 [connection signal="circle_released" from="G29Wheel" to="controller" method="_on_g_29_wheel_circle_released"]

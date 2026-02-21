@@ -1,9 +1,22 @@
 ## A custom node for handling Logitech G29 Racing Wheel input, optimized for simultaneous shifter use.
 ##
-## [G29WheelShifter] translates raw joypad inputs from the wheel into human-readable signals 
-## while preventing hardware input conflicts. On many operating systems, the Logitech shifter 
-## shares internal button IDs with the wheel's D-Pad. Enabling [member shifter_priority] 
-## ensures that shifting gears does not accidentally trigger D-Pad signals.
+## [G29WheelShifter] does the same “raw input → easy signals” job as a normal wheel node,
+## but adds one important safety feature for people using the Logitech H-pattern shifter.
+## On some platforms/drivers, the shifter and the wheel’s D-Pad can report the *same*
+## internal button IDs. When that happens, changing gears may accidentally look like a
+## D-Pad press (or a D-Pad press may look like a gear change) depending on how your game reads input.
+## [br]
+## To solve this, [member shifter_priority] can be enabled. When it is [code]true[/code],
+## this node intentionally ignores the specific D-Pad directions that commonly overlap
+## with the shifter slots (Down/Left/Right). This prevents “dual-firing” bugs where one
+## physical action triggers two different controls in-game.
+## [br]
+## Aside from the overlap protection, it still:
+## [br]
+## - Detects a connected wheel automatically (preferring devices named “G29”/“Logitech” if enabled).
+## - Reads the steering axis each frame and converts -1.0..1.0 into degrees using [member wheel_range_degrees].
+## - Emits clear pressed/released signals for face buttons, paddles, system buttons, and the D-Pad.
+## - Tracks previous button states so signals only fire on transitions (down → pressed, up → released).
 ## [br][br]
 ## [b]Example Usage:[/b]
 ## [codeblock]
@@ -13,7 +26,8 @@
 ##     $G29WheelShifter.steering_changed.connect(_on_steer)
 ##     $G29WheelShifter.cross_pressed.connect(_on_handbrake)
 ## [/codeblock]
-@icon("uid://ch73ynu3lh3p")
+
+@icon("res://addons/logitech_g29/icons/G29 Steering.svg")
 class_name G29WheelShifter
 extends Node
 

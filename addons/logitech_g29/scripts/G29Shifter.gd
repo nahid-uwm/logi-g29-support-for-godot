@@ -19,7 +19,7 @@
 ##     current_gear = 1
 ##     print("Shifted into 1st gear!")
 ## [/codeblock]
-@icon("uid://c36iluwjf81n0")
+@icon("res://addons/logitech_g29/icons/G29 Shifter.svg")
 class_name G29Shifter
 extends Node
 

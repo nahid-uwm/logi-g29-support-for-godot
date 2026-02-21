@@ -1,7 +1,7 @@
 extends Node2D
 
 @onready var wheel: Node2D = %wheel
-
+## ----------------- Buttons -------------------- ##
 @onready var with_button: Sprite2D = %WithButton
 @onready var circle: Sprite2D = %Circle
 @onready var d_down: Sprite2D = %DDown
@@ -25,9 +25,16 @@ extends Node2D
 @onready var square: Sprite2D = %Square
 @onready var x: Sprite2D = %X
 
+## ----------------- Label -------------------- ##
+@onready var wheel_degree: Label = %WheelDegree
+@onready var clutch_label: Label = %ClutchLabel
+@onready var brake_label: Label = %BrakeLabel
+@onready var throttle_label: Label = %ThrottleLabel
+
 
 func _on_g_29_wheel_steering_changed(degrees: float) -> void:
 	wheel.rotation_degrees = degrees
+	wheel_degree.text = str(snappedf(degrees, 0.01))
 
 
 func _on_g_29_wheel_circle_pressed() -> void:
@@ -218,11 +225,14 @@ func _on_g_29_wheel_triangle_released() -> void:
 
 func _on_g_29_pedals_brake_changed(value: float) -> void:
 	brake.modulate = Color(1.0 * (1-value),1.0 * (1-value),1.0 * (1-value))
+	brake_label.text = str(snappedf(value, 0.001))
 
 
 func _on_g_29_pedals_clutch_changed(value: float) -> void:
 	clutch.modulate = Color(1.0 * (1-value),1.0 * (1-value),1.0 * (1-value))
+	clutch_label.text = str(snappedf(value, 0.001))
 
 
 func _on_g_29_pedals_throttle_changed(value: float) -> void:
 	throttle.modulate = Color(1.0 * (1-value),1.0 * (1-value),1.0 * (1-value))
+	throttle_label.text = str(snappedf(value, 0.001))

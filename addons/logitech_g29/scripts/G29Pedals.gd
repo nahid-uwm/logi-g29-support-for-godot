@@ -13,7 +13,7 @@
 ##     # value is 0.0 (resting) to 1.0 (floored)
 ##     car_acceleration = max_acceleration * value
 ## [/codeblock]
-@icon("uid://bbvb523l48pc4")
+@icon("res://addons/logitech_g29/icons/G29 Pedal.svg")
 class_name G29Pedals
 extends Node
 

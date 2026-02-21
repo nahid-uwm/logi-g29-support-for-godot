@@ -1,0 +1,55 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1771709821
+.gitattributes.txt::TextFile::-1::1771709575::0::1::::<><><>0<>0<><>::
+.gitignore.txt::TextFile::-1::1771709483::0::1::::<><><>0<>0<><>::
+ASSET_LIBRARY_SUBMISSION.md::TextFile::-1::1771708641::0::1::::<><><>0<>0<><>::
+icon.svg::CompressedTexture2D::3377314529423378428::1771708641::1771709821::1::::<><><>0<>0<>52c972a7963b8f95e20cc1ca20cccdca<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+README.md::TextFile::-1::1771708641::0::1::::<><><>0<>0<><>::
+::res://addons/::1771708641
+::res://addons/logitech_g29/::1771708688
+README.md::TextFile::-1::1771708641::0::1::::<><><>0<>0<><>::
+::res://addons/logitech_g29/icons/::1771708641
+g29 addon logo mac.icns::OtherFile::-1::1771708641::0::1::::<><><>0<>0<><>::
+g29 addon logo win.ico::OtherFile::-1::1771708641::0::1::::<><><>0<>0<><>::
+g29 addon logo.png::CompressedTexture2D::3090154455200959468::1771708641::1771709822::1::::<><><>0<>0<>9a07f43ab90d0ba0f17cf9fc02ac09c1<>res://.godot/imported/g29 addon logo.png-74e43b163f34eefbda28c4546f8cadde.ctex::
+G29 Pedal.svg::CompressedTexture2D::2500077212901137493::1771708641::1771709821::1::::<><><>0<>0<>3af1f34e438e57b759d8b34c2293db22<>res://.godot/imported/G29 Pedal.svg-363758cc483296a131839c41785e87c3.ctex::
+G29 Shifter.svg::CompressedTexture2D::6802631164171675571::1771708641::1771709821::1::::<><><>0<>0<>6dc821e0d19ed4b5fdcfcc4291797c67<>res://.godot/imported/G29 Shifter.svg-2647beedb05f080ff6702212d988046d.ctex::
+G29 Steering.svg::CompressedTexture2D::156822559141775291::1771708641::1771709821::1::::<><><>0<>0<>cab4da7e0292f34b5a0c2f1bf2c27b46<>res://.godot/imported/G29 Steering.svg-35e657cae27d686828429f885b5926b7.ctex::
+::res://addons/logitech_g29/scripts/::1771708641
+G29Pedals.gd::GDScript::3034825707478876794::1771708641::0::1::::G29Pedals<>Node<>uid://bbvb523l48pc4<>0<>0<><>::
+G29Shifter.gd::GDScript::5928417134528141452::1771708641::0::1::::G29Shifter<>Node<>uid://c36iluwjf81n0<>0<>0<><>::
+G29Wheel.gd::GDScript::4952243663731089568::1771708641::0::1::::G29Wheel<>Node<>uid://ch73ynu3lh3p<>0<>0<><>::
+G29WheelShifterPriority.gd::GDScript::762015783681194009::1771708641::0::1::::G29WheelShifter<>Node<>uid://ch73ynu3lh3p<>0<>0<><>::
+::res://scene/::1771708641
+controller.gd::GDScript::2168093957984063391::1771708641::0::1::::<>Node2D<><>0<>0<><>::
+demo.tscn::PackedScene::5809281782324612842::1771708641::0::1::::<><><>0<>0<><>::uid://ccs5y2ot3qahs::::res://addons/logitech_g29/scripts/G29Wheel.gd<>uid://bjidevhxgb15o::::res://addons/logitech_g29/scripts/G29Pedals.gd<>uid://55igqqjmh45x::::res://scene/controller.gd<>uid://c3lrsvbctjhyw::::res://scene/assets/logi g29 wheel/with button.png<>uid://b5i5jtg3xysfd::::res://scene/assets/logi g29 wheel/circle.png<>uid://cutopi7v0jann::::res://scene/assets/logi g29 wheel/d down.png<>uid://m3wfyifkqoj0::::res://scene/assets/logi g29 wheel/d left.png<>uid://b6ajyf76sn370::::res://scene/assets/logi g29 wheel/d right.png<>uid://b21c37s0apvgh::::res://scene/assets/logi g29 wheel/d up.png<>uid://dqdogob0r5yyt::::res://scene/assets/logi g29 wheel/triangle.png<>uid://ddhqh3fl0rswp::::res://scene/assets/logi g29 wheel/red dial.png<>uid://bt4fbvi1vo7o7::::res://scene/assets/logi g29 wheel/enter.png<>uid://584l0td2lv00::::res://scene/assets/logi g29 wheel/l1.png<>uid://6whpjmoqxncd::::res://scene/assets/logi g29 wheel/l2.png<>uid://bco7wn0muk7f0::::res://scene/assets/logi g29 wheel/l3.png<>uid://bw7yi1vstixft::::res://scene/assets/logi g29 wheel/minus.png<>uid://dmybs5pwrh6ii::::res://scene/assets/logi g29 wheel/option.png<>uid://bl4hupvi2l2te::::res://scene/assets/logi g29 wheel/plus.png<>uid://dd35kjloi0shh::::res://scene/assets/logi g29 wheel/ps.png<>uid://b3glyo52d0xlb::::res://scene/assets/logi g29 wheel/r1.png<>uid://cbnctoe65vtyw::::res://scene/assets/logi g29 wheel/r2.png<>uid://dcrjf3yveam5g::::res://scene/assets/logi g29 wheel/r3.png<>uid://bvhm5rgqo2g11::::res://scene/assets/logi g29 wheel/share.png<>uid://dvh7c8df6rrcb::::res://scene/assets/logi g29 wheel/square.png<>uid://rk3fsyq1df5k::::res://scene/assets/logi g29 wheel/x.png<>uid://bd26t10xbmk4m::::res://scene/assets/logi g29 pedal/pedal full.png<>uid://bsuydvpqx8jqc::::res://scene/assets/logi g29 pedal/Brake.png<>uid://c1761i2wvnb1h::::res://scene/assets/logi g29 pedal/Clutch.png<>uid://g8v0x0wnossh::::res://scene/assets/logi g29 pedal/Throttle.png
+::res://scene/assets/::1771708641
+::res://scene/assets/logi g29 pedal/::1771708641
+Brake.png::CompressedTexture2D::3692571116388419070::1771708641::1771709821::1::::<><><>0<>0<>2a7b415a1010fcbb9febf3ceb7a98af5<>res://.godot/imported/Brake.png-752f64ff578900e792ac1f8c3451622d.ctex::
+Clutch.png::CompressedTexture2D::6665740510446920375::1771708641::1771709821::1::::<><><>0<>0<>71fe1ae0a8910e989479fc6072f48510<>res://.godot/imported/Clutch.png-42c4d2a9ff800a2b622264a21d3533b1.ctex::
+pedal full.png::CompressedTexture2D::2654642976100815006::1771708641::1771709822::1::::<><><>0<>0<>9507ae8f5c4bb0f34b44d40a4a160dbd<>res://.godot/imported/pedal full.png-6107913fd9c4e505085b49f97cca3e37.ctex::
+Throttle.png::CompressedTexture2D::490578477082572147::1771708641::1771709821::1::::<><><>0<>0<>f91f16a2e401ad72ef2cdb9bfa56cd68<>res://.godot/imported/Throttle.png-cfa803e742c711dbaaa086fb06590871.ctex::
+::res://scene/assets/logi g29 wheel/::1771708641
+circle.png::CompressedTexture2D::4510439605311059877::1771708641::1771709821::1::::<><><>0<>0<>0839c351c6f898ae628290cfc85df0c6<>res://.godot/imported/circle.png-5310f9630fedd28c466f80fc1deb851b.ctex::
+d down.png::CompressedTexture2D::6216718712889738431::1771708641::1771709821::1::::<><><>0<>0<>f9263498422c4a733215b66ed6e4ff41<>res://.godot/imported/d down.png-166fa41ac5e2fcbcde15a8d66930cc0c.ctex::
+d left.png::CompressedTexture2D::901414676740473667::1771708641::1771709821::1::::<><><>0<>0<>6a1856fe55c201cb188c1f9b6cc2982a<>res://.godot/imported/d left.png-33ea1cc05475f520f6bd779e831efba8.ctex::
+d right.png::CompressedTexture2D::4562864461944309297::1771708641::1771709821::1::::<><><>0<>0<>39305071190b591a981c7c568963a6fd<>res://.godot/imported/d right.png-aedaf63c33827aef696393d82bc9b035.ctex::
+d up.png::CompressedTexture2D::4335366429430583359::1771708641::1771709821::1::::<><><>0<>0<>8496498f475e66382b3f46ba6aa00944<>res://.godot/imported/d up.png-7ecce6069dd879698fba3f8ea4551feb.ctex::
+enter.png::CompressedTexture2D::3780182154999947260::1771708641::1771709821::1::::<><><>0<>0<>03f1052b05d029f51e7938b4701068c5<>res://.godot/imported/enter.png-e946487773bd999f50f739f2a40e8905.ctex::
+l1.png::CompressedTexture2D::2175571554156007783::1771708641::1771709821::1::::<><><>0<>0<>899ecf5db5a4ac526e760322663e7902<>res://.godot/imported/l1.png-2c4fd313fea7d4b4fbecc214ccc69b09.ctex::
+l2.png::CompressedTexture2D::2221722761132458355::1771708641::1771709821::1::::<><><>0<>0<>d41e9fc97186fe2ec5660d84e243b3f6<>res://.godot/imported/l2.png-d5c5330739ea3d9514493c2a626a3daf.ctex::
+l3.png::CompressedTexture2D::2557682612756481555::1771708641::1771709821::1::::<><><>0<>0<>853740f1cbd4b64ab7aaeca0b8f4fb66<>res://.godot/imported/l3.png-672140ff09932834065d09f1a7fd1c33.ctex::
+minus.png::CompressedTexture2D::3998108224928926345::1771708641::1771709821::1::::<><><>0<>0<>051087b8113f24e589d02f13f4beb1bf<>res://.godot/imported/minus.png-4f9fd2140645dea791d86780beb2682b.ctex::
+option.png::CompressedTexture2D::8051167702011359836::1771708641::1771709821::1::::<><><>0<>0<>30899f58013893f018963493a45d2efc<>res://.godot/imported/option.png-3b6b336b2aff78a726f52c04be5653c2.ctex::
+plus.png::CompressedTexture2D::3218826474097827518::1771708641::1771709821::1::::<><><>0<>0<>def6f4ba0160a1897bc1ae9acef161ab<>res://.godot/imported/plus.png-949ae55ca58ea30a797ffce94b529e59.ctex::
+ps.png::CompressedTexture2D::7429471017179907077::1771708641::1771709821::1::::<><><>0<>0<>1779dfe040d396f87b38c0be446e4069<>res://.godot/imported/ps.png-71ab37322a31820cac5c1abe022b58a4.ctex::
+r1.png::CompressedTexture2D::4364806100959324587::1771708641::1771709821::1::::<><><>0<>0<>bc77bc7c793967f4d3647abe5d8eb47b<>res://.godot/imported/r1.png-426b20a8c137e67c90d1f592859ac762.ctex::
+r2.png::CompressedTexture2D::4870023228852293626::1771708641::1771709821::1::::<><><>0<>0<>5ff49dbe7491de80615fe83ae4b5f6a3<>res://.godot/imported/r2.png-67678a88238767f01e012f5c04e8edde.ctex::
+r3.png::CompressedTexture2D::7335291050767420946::1771708641::1771709821::1::::<><><>0<>0<>900fea95fd9c5e8cdeb8e2cf5a27f408<>res://.godot/imported/r3.png-dca7209de7b034ff26195eabe79431b3.ctex::
+red dial.png::CompressedTexture2D::7385264677625130363::1771708641::1771709821::1::::<><><>0<>0<>5625356fa56341518de849949ef20cfe<>res://.godot/imported/red dial.png-172a6aa9b3ceae1cfae9c41685f853b0.ctex::
+share.png::CompressedTexture2D::3875620125013067486::1771708641::1771709821::1::::<><><>0<>0<>c2962d6172275669b4f1d20ee9d35123<>res://.godot/imported/share.png-13c3eca0d5890ec11e6311036d5cc996.ctex::
+square.png::CompressedTexture2D::8649626665286997729::1771708641::1771709821::1::::<><><>0<>0<>a1e084020c9f6a60498f62d849bcb68f<>res://.godot/imported/square.png-96ada84487b7f2a04ec7e6e47d9ecd45.ctex::
+triangle.png::CompressedTexture2D::8289338173243677955::1771708641::1771709821::1::::<><><>0<>0<>fb3deb8cedce0d93254a59b645ad0ce6<>res://.godot/imported/triangle.png-f687d8347799da8e89c716e3cce65e1c.ctex::
+with button.png::CompressedTexture2D::6761902582364865754::1771708641::1771709822::1::::<><><>0<>0<>0e014dfbec1aa88b7e3000b0fe1f2936<>res://.godot/imported/with button.png-d729823c81461ef22a83baa7ec324707.ctex::
+without button.png::CompressedTexture2D::4873964950457145080::1771708641::1771709822::1::::<><><>0<>0<>b2c02309bdcfad2122dfba023ec27b2b<>res://.godot/imported/without button.png-4ae74e320bf7d4ad9dc4274e155863d0.ctex::
+x.png::CompressedTexture2D::1215564107411578578::1771708641::1771709821::1::::<><><>0<>0<>57f7955212fea4fbecb8c55e3f4e54c3<>res://.godot/imported/x.png-6a4680a4b91638eb663ed6dc7f9e1ed0.ctex::
